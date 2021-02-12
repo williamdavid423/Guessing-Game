@@ -25,7 +25,7 @@ namespace Guessing_Game
                 int playerAmount;
                 int userGuess = Convert.ToInt32(numberInput.Text);
                 playerAmount = randGen.Next(1, 101);
-                outputLabel.Text = $"{randGen}";
+                outputLabel.Text = $"{playerAmount}";
             }
             catch
             {
