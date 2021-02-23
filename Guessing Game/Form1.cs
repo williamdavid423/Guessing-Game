@@ -40,7 +40,7 @@ namespace Guessing_Game
                 else if(userGuess == playerAmount)
                 {
                     outputLabel1.Text = "Congratulations, You Guessed Correct!";
-                   
+                    playerAmount = randGen.Next(1, 101);
                 }
             }
             catch

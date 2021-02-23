@@ -94,7 +94,7 @@
             // 
             this.outputLabel1.AutoSize = true;
             this.outputLabel1.ForeColor = System.Drawing.Color.White;
-            this.outputLabel1.Location = new System.Drawing.Point(129, 405);
+            this.outputLabel1.Location = new System.Drawing.Point(177, 404);
             this.outputLabel1.Name = "outputLabel1";
             this.outputLabel1.Size = new System.Drawing.Size(0, 13);
             this.outputLabel1.TabIndex = 5;
