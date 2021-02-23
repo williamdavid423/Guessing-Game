@@ -33,6 +33,7 @@
             this.numberInput = new System.Windows.Forms.TextBox();
             this.guessButton = new System.Windows.Forms.Button();
             this.outputLabel = new System.Windows.Forms.Label();
+            this.outputLabel1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -86,9 +87,17 @@
             this.outputLabel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.outputLabel.Location = new System.Drawing.Point(129, 372);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(35, 13);
+            this.outputLabel.Size = new System.Drawing.Size(0, 13);
             this.outputLabel.TabIndex = 4;
-            this.outputLabel.Text = "label1";
+            // 
+            // outputLabel1
+            // 
+            this.outputLabel1.AutoSize = true;
+            this.outputLabel1.ForeColor = System.Drawing.Color.White;
+            this.outputLabel1.Location = new System.Drawing.Point(129, 405);
+            this.outputLabel1.Name = "outputLabel1";
+            this.outputLabel1.Size = new System.Drawing.Size(0, 13);
+            this.outputLabel1.TabIndex = 5;
             // 
             // Form1
             // 
@@ -96,6 +105,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(389, 450);
+            this.Controls.Add(this.outputLabel1);
             this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.guessButton);
             this.Controls.Add(this.numberInput);
@@ -115,6 +125,7 @@
         private System.Windows.Forms.TextBox numberInput;
         private System.Windows.Forms.Button guessButton;
         private System.Windows.Forms.Label outputLabel;
+        private System.Windows.Forms.Label outputLabel1;
     }
 }
 

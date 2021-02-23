@@ -13,19 +13,35 @@ namespace Guessing_Game
     public partial class Form1 : Form
     {
         Random randGen = new Random();
+        int playerAmount;
         public Form1()
         {
             InitializeComponent();
+            playerAmount = randGen.Next(1, 101);
         }
 
         private void GuessButton_Click(object sender, EventArgs e)
         {
             try
             {
-                int playerAmount;
+                
                 int userGuess = Convert.ToInt32(numberInput.Text);
-                playerAmount = randGen.Next(1, 101);
-                outputLabel.Text = $"{playerAmount}";
+                
+                //outputLabel.Text = $"{playerAmount}";
+
+                if(userGuess > playerAmount)
+                    {
+                    outputLabel1.Text = "Too High!";
+                }
+                else if(userGuess < playerAmount)
+                {
+                    outputLabel1.Text = "Too Low!";
+                }
+                else if(userGuess == playerAmount)
+                {
+                    outputLabel1.Text = "Congratulations, You Guessed Correct!";
+                   
+                }
             }
             catch
             {
